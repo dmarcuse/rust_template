@@ -5,6 +5,8 @@ jobs:
   check:
     name: Check project
     runs-on: ubuntu-latest
+    env:
+      RUSTFLAGS: -D warnings
     steps:
       - name: Checkout project
         uses: actions/checkout@master
